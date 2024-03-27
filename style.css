@@ -1,0 +1,547 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+* {
+  /* border: 1px solid tomato; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header */
+body {
+  background-color: #292e36;
+ 
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.a-navbar {
+  display: inline-block;
+  padding:15px 60px;
+  
+}
+.a-navbar::after , .social-icons::after {
+  /* transition: 1s;
+  background-color: #b08a5184;
+  border-bottom: 1px solid #e1b168; */
+
+ display: block;
+ padding: 3px;
+  content: '';
+  border-bottom: solid 3px #e1b168;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.a-navbar:hover:after , .social-icons:hover:after{ 
+  transform: scaleX(1);
+}
+
+.social-icons {
+  text-decoration: none;
+  padding:5px 5px;
+}
+.social-icons:hover{
+  transition: 0.8s;
+}
+
+header {
+
+  background-color: #292e36;
+  border: #292e36;
+  color: #e1b168;
+  height: 370px;
+}
+#Call_button {
+  padding: 27px 90px 27px 90px;
+  text-align: center;
+  border: 1px solid #e1b168;
+}
+#Call_button:hover{
+  transition: 0.2s;
+  border-radius: 0px;
+  background: #292e36;
+  box-shadow: inset -10px 10px 20px #20242a,
+              inset 10px -10px 20px #323842;
+}
+#log {
+  
+  display: flex;
+  justify-content: space-between;
+  height: 188px;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+}
+#Reservebutton {
+
+  padding: 30px 120px;
+  border: 0px;
+  background-color: #e1b168;
+  color: #292e36;
+  font: 22px Josefin Sans;
+  font-weight: 400px;
+}
+#Reservebutton:hover{
+  transition: 0.2s;
+  border-radius: 0px;
+ 
+background: #e1b168;
+box-shadow: inset -10px 10px 20px #b08a51,
+            inset 10px -10px 20px #ffd87f;
+}
+nav {
+  display: flex;
+  margin: 40px;
+  justify-content: space-between;
+  height: 82px;
+}
+
+ul {
+ 
+  font: 22px Josefin Sans;
+  display: flex;
+
+  align-items: center;
+}
+li {
+  float: left;
+  list-style-type: none;
+}
+
+#container_social {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+#container_social img {
+  margin: 10px;
+  height: 23px;
+  width: 24px;
+}
+
+/* MAIN */
+#container_main {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: space-between;
+}
+#container_main h1 {
+  padding: 20px;
+  padding-left: 20px;
+  text-align: left;
+  font: 100px Cormorant Infant;
+}
+#container_main h1,
+p {
+  color: wheat;
+}
+#container_main p {
+  font: 22px Josefin Sans;
+  text-align: justify;
+  padding: 20px;
+}
+#container_main1 {
+  display: block;
+}
+#image_main {
+  float: right;
+  width: 770px;
+}
+#View_menu {
+  margin: 20px;
+  margin-left: 20px;
+  width: 230px;
+  height: 73px;
+  border: 1px solid #e1b168;
+  background-color: transparent;
+  font: 22px Josefin Sans;
+  color: wheat;
+}
+
+#View_menu:hover{
+  transition: 0.2s;
+  border-radius: 0px;
+  background: #292e36;
+  box-shadow: inset -10px 10px 20px #20242a,
+              inset 10px -10px 20px #323842;
+}
+/* Locate us  */
+#container_main2 {
+  /* width: 100vw; */
+  display: flex;
+  height: 243px;
+  justify-content: space-around;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+#container_main2 h3 {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+#container_main2 h3,
+#container_main2 p {
+  color: #292e36;
+  font: 30px Josefin Sans;
+}
+/* Delicous story */
+#container_main3 {
+  /* width: 100vw; */
+  display: flex;
+  height: 728px;
+  justify-content: space-around;
+  background-color: white;
+}
+#container_main3 h3 {
+  font: 40px Josefin Sans;
+}
+#container_main3 p {
+  color: #292e36;
+  font: 20px Josefin Sans;
+}
+
+#container_main32 p {
+  padding: 20px 0 0 0;
+  height: 90px;
+  width: 559px;
+}
+#container33 {
+  display: flex;
+}
+#container_main2018 {
+  float: right;
+  width: 274px;
+  height: 156px;
+}
+
+/* MENU */
+
+#container_menu {
+  /* width: 100vw; */
+  padding-left: 40px;
+
+  display: flex;
+  /* padding-left: 40px; */
+
+  background-color: white;
+}
+#image_food {
+  width: 398px;
+  height: 548px;
+}
+#container_menu1 {
+  /* margin-right: 200px; */
+  width: 491px;
+  height: 955px;
+}
+#container_menu1 p,
+#container_menu1 h3 {
+  color: #292e36;
+}
+#container_menu1 p {
+  font: 20px Josefin Sans;
+  padding: 20px 0 20px 0;
+}
+#container_menu1 h3 {
+  padding: 20px 0 20px 0;
+  font: 40px Josefin Sans;
+}
+#seeall_button {
+  margin-top: 40px;
+  width: 255px;
+  height: 73px;
+  background-color: transparent;
+  color: #e1b168;
+  border: 1px solid #e1b168;
+}
+#seeall_button:hover,#button-see-all-dishes:hover{
+  transition: 0.2s;
+  border-radius: 0px;
+background: #ffffff;
+box-shadow: inset -2px 2px 10px #dec094,
+            inset 2px -2px 10px #ffffff;
+
+}
+/* Starters */
+#container_menu2 {
+  margin-top: 100px;
+  /* width: 819px; */
+  height: 1684px;
+}
+#container_menu2 p,
+#container_menu2 h3 {
+  color: #292e36;
+}
+#container_menu2 p {
+  font: 20px Josefin Sans;
+  padding: 20px 0 20px 0;
+}
+#container_menu2 h3 {
+  padding: 20px 0 20px 0;
+  font: 40px Josefin Sans;
+}
+#container_menu h4 {
+  padding: 20px 0 20px 0;
+  font: 25px Josefin Sans;
+}
+#photo {
+  height: 600px;
+}
+#lamps {
+  /* width: 100vw; */
+  height: 600px;
+}
+#section-offers {
+  /* width: 100vw; */
+  justify-content: center;
+  height: 613px;
+  background-color: white;
+}
+#section-offers h3,
+#section-popular-dishes h3 {
+  padding: 10px 0 10px 0;
+  font: 40px Josefin Sans;
+}
+#section-offers h4,
+#section-popular-dishes h4 {
+  padding: 10px 0 10px 0;
+  font: 20px Josefin Sans;
+}
+#section-offers p,
+#section-popular-dishes p {
+  color: #292e36;
+  padding: 10px 0 10px 0;
+  font: 20px Josefin Sans;
+}
+.container-offers,
+.container-popular-dishes {
+  justify-content: center;
+  text-align: center;
+}
+
+.container-chicken {
+  justify-content: center;
+  text-align: center;
+}
+
+#section-popular-dishes {
+  /* justify-content: center; */
+  height: 796px;
+  background-color: white;
+}
+.container-popular-dishes-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+#article-menu-popular {
+  width: 319px;
+  height: 450px;
+}
+#article-menu-popular h4 {
+  font: bold 20px Josefin Sans;
+}
+#section-popular-dishes p {
+  font: 20px Josefin Sans;
+}
+#button-see-all-dishes {
+  width: 255px;
+  height: 73px;
+  background-color: transparent;
+  color: #e1b168;
+  border: 1px solid #e1b168;
+  position: absolute;
+
+  left: 50%;
+  translate: -50%;
+  /* left: 50%;
+   right: 50%;
+   transform: (-50%, -50%); */
+}
+
+#section-what-we-offer {
+  height: 515px;
+  background-color: #292e36;
+  padding: 140px 40px 140px 40px;
+  display: flex;
+  font: 25px Josefin Sans;
+  color: white;
+  /* justify-content: space-evenly; */
+}
+#container-what-we-offer-header h4{
+border-top: 1px solid #e1b168;
+border-bottom: 1px solid #e1b168;
+width: 240px;
+margin-bottom: 20px;
+}#container-what-we-offer-header h3{
+     margin-bottom: 20px;
+  }
+#container-what-we-offer-header p, #container-what-we-offer-icons p{
+color: white;
+}
+#container-what-we-offer-icons{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+}
+#container-what-we-offer-header{
+  height: 214px;
+  width: 448px;
+}
+#container-opened, #container-special-menu, #container-delivery{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  height:235px;
+  width: 254px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 20px solid rgb(50, 56, 65);
+}
+#container-opened img, #container-special-menu img, #container-delivery img{
+  margin-bottom: 10px;
+}
+
+
+#section-booking{
+  height: 977px;
+  background-image: url(images/restaurant.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  padding-top: 150px;
+  height: 697px;
+  width: 920px;
+  background-color: red;
+  text-align: center;
+  justify-content: center ;
+  background-color: rgba(50,56,65, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+form h3{
+  margin-bottom: 20px;
+  font-weight: normal;
+  font: 56px josephine sans;
+  color: white;
+}
+form h4{
+ 
+  margin-left: 360px;
+  border-bottom: 1px solid #e1b168;
+  border-top: 1px solid #e1b168;
+  width: 200px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font: 27px josephine sans;
+  color: white;
+}
+#input-name, #input-email{
+  background-color: rgba(50,56,65, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color: white;
+  margin-top: 20px;
+  width: 320px;
+  height: 70px;
+  padding: 10px 0 10px 10px;
+  border: 1px solid grey;
+  font: 20px josephine sans;
+  
+}
+#input-timing::placeholder, #input-persons::placeholder, #input-date::placeholder,
+#input-name::placeholder, #input-email::placeholder{
+color: white;
+}
+#input-timing, #input-persons, #input-date{
+  color: white;
+  background-color: rgba(50,56,65, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin-top: 20px;
+  width: 212px;
+  height: 70px;
+  padding: 10px 0 10px 10px;
+  border: 1px solid grey;
+  font: 20px josephine sans;
+}
+#btn-book{
+  margin-top: 20px;
+  background: white;
+  color: #292e36;
+  font: 25px josephine sans;
+  width: 242px;
+  height: 68px;
+}
+#btn-book:hover,#btn-subscribe:hover{
+  transition: 0.2s;
+  border-radius: 0px;
+  background: white;
+  box-shadow: inset 3px 5px 2px #5a5a5a,
+              inset -3px -5px 2px #ffffff;
+}
+footer{
+  height: 474px;
+  padding: 20px;
+}
+#footer-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container_social-1{
+  display: flex;
+  align-items: center;
+}
+#logo-info{
+  display: flex;
+}
+#footer-contact{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  
+}
+#footer-contact-info h3{
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #e1b168;
+  border-top: 1px solid #e1b168;
+  
+}
+#footer-contact-email p{
+  text-align: center;
+  color: white;
+}
+#footer-email{
+  width: 664px;
+  height: 68px;
+  color: white;
+  border: 1px solid grey;
+  background-color: #292e36;
+  padding: 5px 0 5px 15px;
+}
+#footer-email::placeholder{
+  color: white;
+  font: 20px josephine sans;
+}
+#btn-subscribe{
+  border: 0;
+  width: 208px;
+  height: 68px;
+  
+  font: 18px josephine sans;
+}
+
